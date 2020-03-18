@@ -75,8 +75,8 @@
 
 // QUERY SELECTOR ALL //
 
-var titles = document.querySelectorAll('.title')
-console.log(titles);
+// var titles = document.querySelectorAll('.title')
+// console.log(titles);
 
 // titles[0].textContent = 'Butts'
 // var odd = document.querySelectorAll('li:nth-child(odd)');
@@ -91,3 +91,59 @@ console.log(titles);
 // };
 
 // TRAVERSING THE DOM //
+
+var itemList = document.querySelector('#items');
+// parentNode
+// console.log(itemList.parentNode);
+// itemList.parentNode.style.backgroundColor = '#ccc';
+// console.log(itemList.parentNode.parentNode.parentNode);
+
+// //parentElement
+// console.log(itemList.parentElement);
+// itemList.parentNode.style.backgroundColor = '#ccc';
+// console.log(itemList.parentElement.parentNode.parentElement);
+
+// childNodes
+// console.log(itemList.childNodes);
+// console.log(itemList.children);
+// console.log(itemList.children[1]);
+// itemList.children[1].style.backgroundColor = 'yellow';
+
+// //firstChld
+// console.log(itemList.firstChild);
+// //firstElementChild
+// console.log(itemList.firstElementChild);
+// itemList.firstElementChild.textContent = "yo";
+// //lastChild
+// console.log(itemList.lastChild);
+// console.log(itemList.lastElementChild);
+// itemList.lastElementChild.textContent = "yo yo";
+
+// nextSibling
+// console.log(itemList.nextSibling);
+// console.log(itemList.nextElementSibling);
+
+//previousSibling
+// console.log(itemList.previousSibling);
+// console.log(itemList.previousElementSibling);
+// itemList.previousElementSibling.style.color = 'orange';
+
+// // CREATING DOM ELEMENTS // //
+
+// // Create a div
+// var newDiv = document.createElement('div');
+// newDiv.className = 'hello'
+// newDiv.id = 'hello1'
+// newDiv.setAttribute('title', 'Hello Div');
+
+// var newDivText = document.createTextNode('Hello World');
+// newDiv.appendChild(newDivText);
+
+// var container = document.querySelector('header .container');
+// var h1 =  document.querySelector('header h1')
+
+// console.log(newDiv);
+
+// newDiv.style.fontSize = '30px';
+
+// container.insertBefore(newDiv, h1);
