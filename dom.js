@@ -15,7 +15,6 @@
 // console.log(document.links);
 // console.log(document.images)
 
-
 //  SELECTORS //
 
 // console.log(document.getElementById('header-title'));
@@ -92,7 +91,7 @@
 
 // TRAVERSING THE DOM //
 
-var itemList = document.querySelector('#items');
+var itemList = document.querySelector("#items");
 // parentNode
 // console.log(itemList.parentNode);
 // itemList.parentNode.style.backgroundColor = '#ccc';
@@ -147,3 +146,83 @@ var itemList = document.querySelector('#items');
 // newDiv.style.fontSize = '30px';
 
 // container.insertBefore(newDiv, h1);
+
+// //EVENTS AND EVENT LISTENERS // //
+// const button = document
+//   .getElementById("button")
+//   .addEventListener("click", buttonClick);
+
+// function buttonClick(e) {
+// console.log("I clicked your button");
+// document.getElementById("header-title").textContent = "changed";
+// document.querySelector("#main").style.backgroundColor = "#f4f4f4";
+// console.log(e)
+
+// console.log(e.target);
+// console.log(e.target.id);
+// console.log(e.target.className);
+// console.log(e.target.classList);
+// var output = document.getElementById('output');
+// output.innerHTML = '<h3>'+e.target.id+'</h3>'
+
+// console.log(e.type);
+
+// console.log(e.clientX);
+// console.log(e.clientY);
+
+// console.log(e.offsetX);
+// console.log(e.offsetY);
+
+// console.log(e.ctrlKey);
+// console.log(e.shiftKey);
+// }
+const button = document.getElementById("button");
+// .addEventListener("click", runEvent);
+// .addEventListener('dblclick', runEvent);
+// .addEventListener('mousedown', runEvent);
+// .addEventListener('mouseup', runEvent);
+
+// const box = document.getElementById('box')
+// .addEventListener('mouseenter', runEvent);
+// .addEventListener('mouseleave', runEvent);
+// .addEventListener('mouseover', runEvent);
+// .addEventListener('mouseout', runEvent);
+// box.addEventListener('mousemove', runEvent);
+
+// function runEvent(e) {
+//   console.log('EVENT TYPE: '+e.type)
+
+//   // output.innerHTML = '<h3>MouseX: ' + e.offsetX + ' </h3><h3>MouseY: ' + e.offsetY +' </h3>';
+
+//   // box.style.backgroundColor = "rgb("+e.offsetX+","+e.offsetY+",40)"
+// }
+
+// INPUT EVENTS //
+
+const itemInput = document.querySelector('input[type="text"]');
+const form = document.querySelector("form");
+const select = document.querySelector("select");
+
+// itemInput.addEventListener("keydown", runEvent);
+// itemInput.addEventListener("keyup", runEvent);
+// itemInput.addEventListener("keypress", runEvent);
+// itemInput.addEventListener("focus", runEvent);
+// itemInput.addEventListener("blur", runEvent);
+// itemInput.addEventListener("cut", runEvent);
+// itemInput.addEventListener("paste", runEvent);
+// itemInput.addEventListener("input", runEvent);
+
+// select.addEventListener('change', runEvent);
+// select.addEventListener('input', runEvent);
+
+// form.addEventListener('submit', runEvent);
+
+// function runEvent(e) {
+//   e.preventDefault();
+//   console.log("EVENT TYPE: " + e.type);
+//   // console.log(e.target.value);
+//   document.getElementById('output').innerHTML = '<h3>'+e.target.value+'</h3>'
+// }
+
+
+
